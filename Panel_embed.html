@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Interfaz</title>
+</head>
+<body>
+    <h1>Chatbot Interfaz</h1>
+    <button id="conversational-interface">Interfaz Conversacional</button>
+    <button id="precise-responses">Respuestas Precisas</button>
+    <button id="access-to-business-info">Acceso a Información Empresarial</button>   
+    <button id="internet-search">Búsquedas en Internet</button>
+
+    <div id="chat-output"></div>
+    <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+    <button id="send-button">Enviar</button>
+    <div id="iframe-container" style="display: none;">
+        <iframe src="https://www.chatpdf.com/?via=lting" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
+    <div id="iframe-container" style="display: none;">
+        <iframe src="https://chrome.google.com/webstore/detail/perplexity-ai-companion" frameborder="0" width="600" height="400"></iframe>
+   
+    </div>
+    <script>
+        const accessButton = document.getElementById("access-to-business-info");
+        const iframeContainer = document.getElementById("iframe-container");
+
+        accessButton.addEventListener("click", () => {
+            iframeContainer.style.display = "block";
+     
+      
+     });
+       
+        // Aquí puedes agregar tu código JavaScript para manejar la interacción con el chatbot
+        // y realizar las diferentes acciones requeridas.
+    </script>
+</body>
+</html>
